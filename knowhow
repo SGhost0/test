@@ -1,7 +1,7 @@
 初始化git仓库
 git init
 
-设置该git仓库的用户名和邮箱信息
+设置该仓库的用户名和邮箱信息
 git config --global user.name "<name>"
 git config --global user.email "<email>"
 
@@ -12,6 +12,6 @@ git status
 git add <filename>
 
 提交暂存区文件到本地仓库
-git commit <filename>
+git commit <filename> -m "<commit message>"
 
 
