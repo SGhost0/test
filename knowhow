@@ -55,4 +55,10 @@ git remote add <origin> <ssh link>
 git remote -v
 
 
+上传本地仓库到github远程仓库
+git push <origin> <branch>
+//branch是我想要提交到远程仓库的分支
+
+
+
 
