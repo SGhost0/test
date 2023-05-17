@@ -30,7 +30,7 @@ git log
 
 查看仓库的所有历史版本
 git reflog
-
+//还可以查看关于版本的历史操作
 
 回退仓库的版本
 git reset --hard HEAD^
@@ -44,6 +44,15 @@ git reset --hard <commit id>
 
 修改已经提交的历史版本的信息
 git commit --amend
+
+
+将github上的远程仓库链接到本地仓库
+git remote add <origin> <ssh link>
+//origin为别名，ssh link在github远程仓库里有提供
+
+
+查看当前仓库链接到的远程仓库
+git remote -v
 
 
 
