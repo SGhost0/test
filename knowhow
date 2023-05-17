@@ -1,0 +1,17 @@
+初始化git仓库
+git init
+
+设置该git仓库的用户名和邮箱信息
+git config --global user.name "<name>"
+git config --global user.email "<email>"
+
+查看当前所处状态
+git status
+
+提交文件到暂存区
+git add <filename>
+
+提交暂存区文件到本地仓库
+git commit <filename>
+
+
