@@ -13,5 +13,20 @@ git add <filename>
 
 提交暂存区文件到本地仓库
 git commit <filename> -m "<commit message>"
+//commit message可以看作该次修改的备注
+
+查看仓库的现有历史版本
+git log
+
+查看仓库的所有历史版本
+git reflog
+
+回退仓库的版本
+git reset --hard HEAD^
+//该命令只回退了一个版本
+
+找回仓库的版本
+git reset --hard <commit id>
+//commit id在git log和git reflog里都有提供，需要提前记住
 
 
