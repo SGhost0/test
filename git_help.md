@@ -26,3 +26,6 @@ git remote remove [origin]
 
 ## git push
 git push [origin] [branch]  
+
+## git pull
+git pull [origin] [branch]  
