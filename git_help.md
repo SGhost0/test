@@ -4,6 +4,7 @@ git config --global user.name "[email]"
 git config --list  
 
 ## git add
+git add .  
 git add [filename]  
 
 ## git commit
@@ -29,3 +30,13 @@ git push [origin] [branch]
 
 ## git pull
 git pull [origin] [branch]  
+
+## git checkout
+git checkout .//放弃工作区的全部修改  
+git checkout -- filename  
+git checkout -f//强制放弃工作区和暂存区的所有修改  
+git checkout [branch]//切换到branch分支上  
+git checkout -b [branch]//创建并切换到branch分支上  
+
+## git branch
+git branch [branch]//创建branch分支  
