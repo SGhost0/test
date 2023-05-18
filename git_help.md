@@ -40,3 +40,4 @@ git checkout -b [branch]//创建并切换到branch分支上
 
 ## git branch
 git branch [branch]//创建branch分支  
+git branch -D [branch]//非常确定地删除branch分支
