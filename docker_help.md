@@ -25,22 +25,34 @@ docker run ubuntu:18.04 /bin/echo 'Hello world'
 docker run -d ubuntu:18.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"  
 ###### `-d`:指让容器在后台运行并且不把运行的结果打印到宿主机上，但也可以用`docker logs [container id]`查看输出结果。
 
+
 ## 查看容器
 docker container ls  
-docker container ls -a//查看已终止的容器  
+docker container ls -a//查看所有容器，包含已终止的容器  
 
 
 ## 启动容器
 docker container start ubuntu:18.04  
+
 
 ## 进入容器
 docker attach [container id]  
 docker exec -it [container id] [command]//推荐使用，退出不会导致容器的终止  
 ###### `-it`:只用`-i`参数时，由于没有分配伪终端，界面没有我们熟悉的Linux命令提示符，但命令执行结果仍然可以返回。
 
+
 ## 终止容器
 docker container stop [container id]  
+
 
 ## 删除容器
 docker container rm [container id]  
 docker container prune//删除所有处于终止状态的容器  
+
+
+## 容器互连
+docker network create -d bridge my-net  
+docker run --it --rm --name busybox1 --network my-net busybox sh  
+docker run --it --rm --name busybox2 --network my-net busybox sh  
+
+
